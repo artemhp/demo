@@ -1,4 +1,5 @@
-import "bootstrap/dist/css/bootstrap.min.css";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './App.css';
 import { Switch, Route, BrowserRouter as Router } from 'react-router-dom';
 import Category from './components/Category/Category';
 import List from './components/List/List';
@@ -10,7 +11,7 @@ function App() {
         <Route exact path='/'>
           <Category />
         </Route>
-        <Route exact path='/list'>
+        <Route exact path='/list/:category'>
           <List />
         </Route>
         <Route exact path='/order'>
