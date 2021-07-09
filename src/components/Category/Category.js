@@ -24,8 +24,4 @@ const Category = () => {
   );
 };
 
-Category.propTypes = {};
-
-Category.defaultProps = {};
-
 export default Category;
