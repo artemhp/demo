@@ -17,8 +17,8 @@ const List = () => {
         {category}
       </Button>
       <ListGroup>
-        {data.map(({ name, distance }) => (
-          <ListGroup.Item onClick={goTo(name)}>
+        {data.map(({ name, distance, id }) => (
+          <ListGroup.Item onClick={goTo(id)}>
             {name}
             <span className='float-right text-muted'>{distance} </span>
           </ListGroup.Item>
