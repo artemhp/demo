@@ -12,7 +12,7 @@
   #  status = 200
   [[redirects]]
     from = "/api"
-    to = "https://react-poc-json-server-2.herokuapp.com/"
+    to = "https://react-poc-json-server-2.herokuapp.com/api"
     status = 200
     force = true
     headers = {X-From = "Netlify"}
