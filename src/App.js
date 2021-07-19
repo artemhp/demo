@@ -17,7 +17,7 @@ function App() {
           <Route exact path='/list/:category'>
             <List />
           </Route>
-          <Route exact path='/order/:name'>
+          <Route exact path='/order/:id'>
             <Order />
           </Route>
         </Switch>
