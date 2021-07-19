@@ -24,7 +24,7 @@ const List = () => {
       >
         {category}
       </Button>
-      {data && <Alert variant='info'>No students</Alert>}
+      {!data.length && <Alert variant='info'>No students</Alert>}
       <ListGroup>
         {data.map(({ name, distance, id }) => (
           <ListGroup.Item
