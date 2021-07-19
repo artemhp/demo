@@ -9,7 +9,7 @@ const List = () => {
   const history = useHistory();
   const goTo = (link) => () => history.push(`/order/${link}`);
   const { isLoading, data, isError } = useQuery(`getList${category}`, () =>
-    axios.get(`/list?house=${category}`).then(({ data }) => data)
+    axios.get(`/api/list?house=${category}`).then(({ data }) => data)
   );
   if (isError) return <Alert variant='danger'>Something went wrong</Alert>;
   if (isLoading) return <Spinner className='m-2' animation='border' />;

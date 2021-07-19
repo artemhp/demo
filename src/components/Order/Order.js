@@ -17,7 +17,7 @@ import {
 const Order = () => {
   const { id } = useParams();
   const { isLoading, data, isError } = useQuery('getOrder', () => {
-    return axios.get(`/list?id=${id}`).then(({ data }) => data[0]);
+    return axios.get(`/api/list?id=${id}`).then(({ data }) => data[0]);
   });
   const formik = useFormik({
     initialValues: { message: '', name: '' },
